@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'chantelli_antiquaregular';
+    src: url('Chantelli_Antiqua-webfont.eot');
+    src: url('Chantelli_Antiqua-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Chantelli_Antiqua-webfont.woff2') format('woff2'),
+         url('Chantelli_Antiqua-webfont.woff') format('woff'),
+         url('Chantelli_Antiqua-webfont.ttf') format('truetype'),
+         url('Chantelli_Antiqua-webfont.svg#chantelli_antiquaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1
+{
+    color: green;
+}
+
+h2
+{
+    color: #3EA31C;
+    font-style: italic;
+}
+
+body
+{
+    background-image: url(images/Fond.jpeg);
+}
+
+p, ul
+{
+    font-family: 'chantelli_antiquaregular';
+}
+
+#main_wrapper
+{
+    display: flex;
+    width: 100%;
+}
+
+#liseré
+{
+    background-color: lightgreen;
+    height: 625px;
+    flex: 1;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.6;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+
+@media all and (max-width: 1024px)
+{
+    #liseré
+    {
+        display: none;
+    }
+}
+
+#CV
+{
+    display: flex;
+    height: 625px;
+    flex: 10;
+    flex-direction: column;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#titre
+{
+    margin-left: 35%;
+    align-items: center;
+    text-align: center;
+}
+
+header a
+{
+    align-items: flex-end;
+}
+
+section
+{
+    margin-right: 2px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+}
+
+.part
+{
+    max-width: 250px;
+}
